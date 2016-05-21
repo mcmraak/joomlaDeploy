@@ -2,6 +2,9 @@
 
 PHP-script for deployment or transfer Joomla using FTP
 
+PHP-Скрипт для переноса CMS Joomla на хостинг с локального сервера.
+Работает очень просто, заполняем массив с настройками, вызываем скрипт в консоле.
+
 ## Usage
 
 Fill the array $_config

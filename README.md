@@ -30,11 +30,21 @@ $_config = array(
 );
 ```
 
+#### Deploy all
+php deploy.php
+
 #### Get help
 php deploy.php -help
 
 #### Testing connections
 php deploy.php -test
+
+#### Only mysqldump migrate
+php deploy.php -dump
+
+#### Save mysqldump to file dump.sql
+php deploy.php -savedump
+
 
 ## License
 

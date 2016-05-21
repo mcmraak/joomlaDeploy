@@ -412,7 +412,7 @@ class Deploy {
         $this->hostTests();
 
         echo "Convert dump.sql to utf-8:";
-        $this->utf8Force('dump.sql');
+        $this->utf8Force('dump.sql'); # Optional
         echo "OK\n";
         echo "Zip started...\n";
         if ($this->ZipFull('./', './deploy.zip'))

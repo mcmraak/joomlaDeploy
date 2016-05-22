@@ -267,10 +267,6 @@ class Deploy {
         {
             echo "OK\n";
         }
-        if ($argv[1] == 'test')
-        {
-            die();
-        }
     }
 
     function cleanHost()

@@ -1,4 +1,4 @@
-# deploy.php
+# Joomla deploy script
 
 PHP-script for deployment or transfer Joomla using FTP
 

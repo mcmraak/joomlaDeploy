@@ -4,7 +4,7 @@
 #projectUrl: https://github.com/mcmraak/joomlaDeploy
 #autor: Aleksandr Ablizin (mcmraak@gmail.com)
 #autorUrl: http://mraak.ru
-
+set_time_limit(0);
 # Configuration
 $_config = array(
     'remoteHost' => 'http://domain.com', // Project domain http://domain.com
@@ -161,7 +161,7 @@ class Deploy {
     function createShell()
     {
         echo "Create shell\n";
-        $shell = '<?php if($_POST["key"]!="hYdfjuKnff"){die();}$code=$_POST["code"];eval($code);';
+        $shell = '<?php set_time_limit(0);if($_POST["key"]!="hYdfjuKnff"){die();}$code=$_POST["code"];eval($code);';
         file_put_contents("deployshell.php", $shell);
         $this->ftpUpload('deployshell.php');
         unlink('deployshell.php');
